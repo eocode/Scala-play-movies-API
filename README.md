@@ -20,6 +20,7 @@ App de peliculas con scala, el repositorio contine información teórica además
   - [Código compilado a una carpeta](#c%c3%b3digo-compilado-a-una-carpeta)
   - [Ejecución en modo producción](#ejecuci%c3%b3n-en-modo-producci%c3%b3n)
   - [Docker](#docker)
+- [Bug Errors](#bug-errors)
 
 # Descripción del proyecto
 API Rest de peliculas (CRUD) creada con el framework Play para Scala
@@ -134,4 +135,19 @@ Creará una imagen con el nombre del proyecto
 Para ejecutar en docker:
 ```bash
 docker run -p 9000:9000 -it scalap-play-api:1.0-SNAPSHOT
+```
+
+# Bug Errors
+Compila en modo local, al levantar el ambiente de producción con cualquiera de las formas descritas no se levanta. No logro identificar el problema, aquí el resultado
+
+``` bash
+(Starting server. Type Ctrl+D toexit logs, the server will remain in background)
+
+La línea escrita es demasiado larga.
+La sintaxis del comando no es correcta.
+2020-03-1715:03:13,228 shutdown-hooks-run-all ERROR No Log4j 2configurationfile found. Using defa
+ult configuration (logging only errors to the console), or user programmatically provided configurat
+ions. Set system property'log4j2.debug' to show Log4j 2 internal initialization logging. See https:
+//logging.apache.org/log4j/2.x/manual/configuration.html for instructions on how to configure Log4j
+2
 ```
